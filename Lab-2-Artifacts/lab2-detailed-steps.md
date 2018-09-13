@@ -83,7 +83,7 @@ In this task you will set up Task Auto Scaling for the cats and dogs services
 
     2. Enter: **Remove 5 tasks** when **100** >= RequestCount > -infinity
 
-17.	Click **Save**.
+17.	For the **Cooldown period**, enter **15** seconds so that we can scale down relatively fast for the purposes of this workshop. Then click **Save**.
 
 18.	Click **Next step**.
 
@@ -137,7 +137,7 @@ In this task you will set up Task Auto Scaling for the cats and dogs services
 
     2. Enter: **Remove 5 tasks** when **100** >= RequestCount > -infinity
 
-36.	Click **Save**.
+36.	For the **Cooldown period**, enter **15** seconds so that we can scale down relatively fast for the purposes of this workshop. Then click **Save**.
 
 37.	Click **Next step**.
 
@@ -171,13 +171,13 @@ You will create a CloudFormation stack containing a load generator that sends lo
 
 9. Click **Metrics**.
 
-10.	On the **All metrics** tab, click **ApplicationELB**, then **Per AppELB, per AZ, per TG Metrics**.
+10.	On the **All metrics** tab, click **ApplicationELB**, then **Per AppELB, per TG Metrics**.
 
 11.	Find the LoadBalancer where the name starts with **catsn-catsn** and select the **RequestCount** metrics.
 
-12.	On the **Graphed metrics** tab, change the **Statistic** to **Sum**, and the **Period to 10 seconds**.
+12.	On the **Graphed metrics** tab, change the **Statistic** to **Sum**, and the **Period to 1 Minute**.
 
-13.	After a minute or two you should start to see an increase in request counts, to around 1500 each for the cats and dogs target groups. Note that the simpleHomepage target group is not accessed by the load generator.
+13.	After a minute or two you should start to see an increase in request counts, to around 3000 each for the cats and dogs target groups. Note that the simpleHomepage target group is not accessed by the load generator.
 
 14.	Click **Alarms**.
 
