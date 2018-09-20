@@ -8,7 +8,7 @@ In this task you will create a new Task definition that will run the image asses
 
 2. Click **Task Definitions**.
 
-3. Click Create new **Task Definition**.
+3. Click Create new **Task Definition**. Choose a launch type of **EC2**.
 
 4. In **Task Definition Name** enter **ImageAssessor**.
 
@@ -24,7 +24,7 @@ In this task you will create a new Task definition that will run the image asses
 
     1. Key: ALB_URL
     
-    2. Value: <URL of the load balancer> for example: http://catsn-catsn-123455678-abcdefgh.us-west-2.elb.amazonaws.com
+    2. Value: <URL of the load balancer> for example: http://catsn-catsn-123455678-abcdefgh.us-west-2.elb.amazonaws.com. You can find your ALB URL as a CloudFormation Output for the **catsndogssetup** CloudFormation stack that you previously deployed.
 
 10.	Click **Add**.
 
@@ -50,7 +50,7 @@ In this task you will create a scheduled ECS task which executes every five minu
 
 5. In Scheduled target:
     
-    1. In **Target idv, enter **catsndogsLab**.
+    1. In **Target id**, enter **catsndogsLab**. Make sure the Launch type is **EC2**.
     
     2. For **Task Definition**, from the drop list, choose the **ImageAssessor:1** image.
     
@@ -105,7 +105,7 @@ The ImageAssessor can also reset all of the cats image if the following environm
 
 1. In the ECS Console, click the **catsndogsECScluster**.
 
-2. Click the **Tasks** tab and then click **Run new Task**.
+2. Click the **Tasks** tab and then click **Run new Task**. Selec the launch type radio button of **EC2**.
 
 3. In **Task Definition** select the most recent revision of the **ImageAssessor** task.
 

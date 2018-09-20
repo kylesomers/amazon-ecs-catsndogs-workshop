@@ -8,7 +8,7 @@ In this step, you will create a new task definition for a deep learning containe
 
 2. Select **Task Definitions** from the left-hand menu.
 
-3. Click **Create new Task Definition**.
+3. Click **Create new Task Definition**. Choose launch type of **EC2**.
 
 4. In **Task Definition Name**, enter **mxnet**.
 
@@ -48,7 +48,7 @@ In this step, you will create a new ECS Service that will ensure two instances o
 
 2. Click the cluster **catsndogsECScluster**.
 
-3. On the Services tab, click **Create**.
+3. On the Services tab, click **Create**. Choose launch type of **EC2**.
 
 4. In **Configure service**:
 
@@ -56,7 +56,7 @@ In this step, you will create a new ECS Service that will ensure two instances o
 
     2. In **Cluster**, choose **catsndogsECScluster**.
 
-    3. In **Service name**, enter **mxnetservice**.
+    3. In **Service name**, enter **mxnetservice**. Leave the service type set to **Replica**. 
 
     4. In **Number of tasks**, enter **2**.
 

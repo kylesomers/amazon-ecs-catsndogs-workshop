@@ -88,15 +88,15 @@ In this step, you will create a new AWS CodePipeline pipeline that you will use 
 
 11.	In **VPC**, for **VPC ID**, choose **No VPC**.
 
-12.	Expand **Advanced**:
+12.	Expand **Advanced** and enter values:
 
     1.	In **Environment variables** add the following:
 
-        1.	**AWS_DEFAULT_REGION:** for example: eu-west-1
+        1.	**AWS_DEFAULT_REGION:** Inpu your region you are using for this lab. For example: eu-west-1
 
-        2.	**AWS_ACCOUNT_ID:** for example: 12345567891011
+        2.	**AWS_ACCOUNT_ID:** Input your AWS Account Id. For example: 12345567891011
 
-        3.	**REPOSITORY_URI:** for example: 12345567891011.dkr.ecr.ap-southeast-2.amazonaws.com/dogs
+        3.	**REPOSITORY_URI:** Input the **Dogs** repository that was created for you. For example: 12345567891011.dkr.ecr.ap-southeast-2.amazonaws.com/dogs
 
 **Note:** The URI of your dogs repository is listed in the ECS Console. Click on Repositories, then on the dogs repository.
 

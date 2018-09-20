@@ -22,13 +22,13 @@ In this step, you will use EC2 Systems Manager Parameter Store to create a secur
 
 9.	In **Value**, enter **catsndogs-assets.s3.amazonaws.com**
 
-10.	Click **Create parameter**.
+10.	Click **Create parameter**. Then once the parameter has been created, click into the newly created parameter.
 
-11.	Click **Tags** tab and then click **Add Tags**.
+11.	From the UnicornLocation parameter page, click the **Tags** tab and then click **Add Tags**. 
 
 12.	For **Tag Key** enter **Classification**.
 
-13.	For **Tag Value** enter **Mythical**. 
+13.	For **Tag Value** enter **Mythical**. Then **Save** the tag.
 
 The tag information will be used to restrict access to the UnicornLocation parameter, more information can be found here: 
 
